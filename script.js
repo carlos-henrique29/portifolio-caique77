@@ -2,7 +2,7 @@
    CONFIGURAÇÕES (edite aqui)
    ========================= */
 // Troque pelo WhatsApp de vocês no formato: 55 + DDD + número (sem espaços)
-const WHATS_NUMBER = "555198154224"; // exemplo do seu histórico
+const WHATS_NUMBER = "5551994450883"; // exemplo do seu histórico
 const WHATS_DEFAULT_MSG = "Olá! Vim pelo site demonstrativo e quero um orçamento. 😊";
 
 /* =========================
@@ -249,3 +249,4 @@ setWhatsLinks();
 qs("#toastBtn")?.addEventListener("click", () => {
   showToast("Exemplo de aviso: promoção, cupom, novidade…");
 });
+
