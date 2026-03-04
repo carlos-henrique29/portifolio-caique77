@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Demo Pro - Site Demonstrativo | Seu Serviço</title>
+  <meta name="description" content="Site demonstrativo com funções reais: formulário, WhatsApp, FAQ, depoimentos, tema, modal, filtros, animações, e muito mais.">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Barra de anúncio (mostra exemplo de aviso / promoção) -->
+  <div class="topbar" role="region" aria-label="Aviso do site">
+    <div class="container topbar__content">
+      <span>🚀 Demonstração: site com várias funções prontas para usar.</span>
+      <button class="topbar__btn" id="closeTopbar" aria-label="Fechar aviso">✕</button>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="inicio">
+    <div class="container header__content">
+      <a class="brand" href="#inicio" aria-label="Voltar ao início">
+        <span class="brand__logo">⚡</span>
+        <span class="brand__name">Seu Serviço</span>
+      </a>
+
+      <nav class="nav" aria-label="Menu principal">
+        <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">☰</button>
+        <ul class="nav__list" id="navList">
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#demos">Demonstrações</a></li>
+          <li><a href="#precos">Planos</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn--small" href="#contato">Orçamento</a></li>
+        </ul>
+      </nav>
+
+      <!-- Toggle tema (claro/escuro) -->
+      <button class="themeBtn" id="themeBtn" aria-label="Alternar tema">
+        🌙 <span class="themeBtn__text">Tema</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <span class="badge">SITE DEMONSTRATIVO COMPLETO</span>
+          <h1>Um site que mostra <span class="highlight">tudo o que sabemos fazer</span> (com exemplos reais).</h1>
+          <p class="muted">
+            Este projeto serve como vitrine: botões, formulários, animações, WhatsApp, filtros, modal,
+            FAQ, depoimentos, contador, validações e muito mais.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#demos">Ver demonstrações</a>
+            <button class="btn btn--ghost" id="openShowcase">Abrir modal</button>
+          </div>
+
+          <div class="miniCards">
+            <div class="miniCard reveal">
+              <strong>📱 Responsivo</strong>
+              <span class="muted">Serve em celular e PC.</span>
+            </div>
+            <div class="miniCard reveal">
+              <strong>⚡ Rápido</strong>
+              <span class="muted">Código leve e otimizado.</span>
+            </div>
+            <div class="miniCard reveal">
+              <strong>🔒 Seguro</strong>
+              <span class="muted">Boas práticas e validações.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card do lado direito: demonstra “bloco de valor” + contadores -->
+        <aside class="hero__card reveal" aria-label="Painel demonstrativo">
+          <h2>O que este demo inclui</h2>
+          <p class="muted">
+            Cada bloco aqui embaixo tem uma explicação de <b>para que serve</b> e como você pode usar
+            no site do seu cliente.
+          </p>
+
+          <div class="stats">
+            <div class="stat">
+              <span class="stat__num" data-count="12">0</span>
+              <span class="stat__label">Funções no site</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="5">0</span>
+              <span class="stat__label">Seções prontas</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="100">0</span>
+              <span class="stat__label">% personalizável</span>
+            </div>
+          </div>
+
+          <div class="note">
+            <strong>💡 Dica</strong>
+            <p class="muted">
+              Você pode trocar cores, textos e ícones facilmente no CSS e no HTML.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <header class="section__header">
+          <h2>Serviços que podemos entregar</h2>
+          <p class="muted">
+            Aqui você mostra claramente para o cliente o que oferece e por que isso importa.
+          </p>
+        </header>
+
+        <div class="grid3">
+          <article class="card reveal">
+            <h3>🌐 Site institucional</h3>
+            <p class="muted">
+              <b>Para que serve:</b> apresentar empresa/serviço com credibilidade e contato fácil.
+            </p>
+            <ul class="list">
+              <li>Seções: sobre, serviços, depoimentos</li>
+              <li>Botões de contato e WhatsApp</li>
+              <li>Layout moderno e responsivo</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3>🛒 Página de vendas</h3>
+            <p class="muted">
+              <b>Para que serve:</b> vender um serviço/produto com foco em conversão (leads).
+            </p>
+            <ul class="list">
+              <li>Copy persuasiva + CTA</li>
+              <li>Prova social e garantias</li>
+              <li>Formulário com validação</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3>📲 Integrações</h3>
+            <p class="muted">
+              <b>Para que serve:</b> automatizar contato e agendamento.
+            </p>
+            <ul class="list">
+              <li>WhatsApp com mensagem pronta</li>
+              <li>Botões com rastreio (cliques)</li>
+              <li>Links para Calendly / Instagram</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demonstrações -->
+    <section class="section section--soft" id="demos">
+      <div class="container">
+        <header class="section__header">
+          <h2>Demonstrações práticas (funções reais)</h2>
+          <p class="muted">
+            Cada módulo abaixo existe para você provar valor e mostrar funcionalidades.
+          </p>
+        </header>
+
+        <!-- Busca + filtro (serve para filtrar serviços/portfolio/produtos) -->
+        <div class="demoHeader reveal">
+          <div>
+            <h3>🔎 Busca & Filtro</h3>
+            <p class="muted">
+              <b>Para que serve:</b> filtrar portfólio, serviços ou produtos sem recarregar a página.
+            </p>
+          </div>
+
+          <div class="demoHeader__controls">
+            <input id="searchInput" class="input" placeholder="Pesquisar cards (ex: site, integração, vendas)" />
+            <select id="categorySelect" class="input">
+              <option value="all">Todas categorias</option>
+              <option value="site">Site</option>
+              <option value="vendas">Vendas</option>
+              <option value="integracao">Integração</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid3" id="demoCards">
+          <article class="card reveal demoCard" data-category="site">
+            <h3>✅ Layout responsivo</h3>
+            <p class="muted"><b>Serve para:</b> o site ficar bonito em celular, tablet e PC.</p>
+            <span class="tag">site</span>
+          </article>
+
+          <article class="card reveal demoCard" data-category="vendas">
+            <h3>✅ Botões de CTA</h3>
+            <p class="muted"><b>Serve para:</b> aumentar cliques e pedidos de orçamento.</p>
+            <span class="tag">vendas</span>
+          </article>
+
+          <article class="card reveal demoCard" data-category="integracao">
+            <h3>✅ WhatsApp com mensagem</h3>
+            <p class="muted"><b>Serve para:</b> abrir conversa pronta com o cliente.</p>
+            <span class="tag">integracao</span>
+          </article>
+
+          <article class="card reveal demoCard" data-category="site">
+            <h3>✅ Animações suaves</h3>
+            <p class="muted"><b>Serve para:</b> deixar o site moderno e “vivo”.</p>
+            <span class="tag">site</span>
+          </article>
+
+          <article class="card reveal demoCard" data-category="vendas">
+            <h3>✅ Prova social</h3>
+            <p class="muted"><b>Serve para:</b> aumentar confiança e conversão.</p>
+            <span class="tag">vendas</span>
+          </article>
+
+          <article class="card reveal demoCard" data-category="integracao">
+            <h3>✅ Formulário com validação</h3>
+            <p class="muted"><b>Serve para:</b> evitar mensagens vazias e organizar leads.</p>
+            <span class="tag">integracao</span>
+          </article>
+        </div>
+
+        <!-- Depoimentos (carrossel simples) -->
+        <div class="split reveal">
+          <div class="card">
+            <h3>⭐ Depoimentos (carrossel)</h3>
+            <p class="muted"><b>Para que serve:</b> prova social automática trocando depoimentos.</p>
+
+            <div class="testimonial" id="testimonialBox">
+              <p class="testimonial__text" id="tText">“Atendimento rápido e site ficou lindo no celular!”</p>
+              <div class="testimonial__meta">
+                <span id="tName"><b>Cliente A</b></span>
+                <span class="muted" id="tRole">Negócio Local</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <button class="btn btn--small btn--ghost" id="prevT">← Anterior</button>
+              <button class="btn btn--small" id="nextT">Próximo →</button>
+            </div>
+          </div>
+
+          <!-- Copiar texto (serve para copiar pix, cupom, link, etc.) -->
+          <div class="card">
+            <h3>📋 Copiar informação</h3>
+            <p class="muted"><b>Para que serve:</b> copiar link, cupom, PIX, telefone, etc. com 1 clique.</p>
+
+            <div class="copyBox">
+              <input id="copyTarget" class="input" value="https://seuservico.com.br" readonly />
+              <button class="btn btn--small" id="copyBtn">Copiar</button>
+            </div>
+
+            <p class="hint" id="copyHint">Dica: isso vira “Copiar PIX” ou “Copiar Instagram” também.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planos -->
+    <section class="section" id="precos">
+      <div class="container">
+        <header class="section__header">
+          <h2>Planos (exemplo)</h2>
+          <p class="muted"><b>Para que serve:</b> facilitar a escolha do cliente com opções claras.</p>
+        </header>
+
+        <div class="grid3">
+          <article class="card reveal price">
+            <h3>Básico</h3>
+            <p class="muted">Para começar e ter presença online.</p>
+            <div class="price__value">R$ <span>---</span></div>
+            <ul class="list">
+              <li>1 página</li>
+              <li>Botão WhatsApp</li>
+              <li>Responsivo</li>
+            </ul>
+            <a class="btn btn--small" href="#contato">Quero esse</a>
+          </article>
+
+          <article class="card reveal price price--featured">
+            <span class="badge badge--alt">MAIS PEDIDO</span>
+            <h3>Profissional</h3>
+            <p class="muted">Para vender mais e passar confiança.</p>
+            <div class="price__value">R$ <span>---</span></div>
+            <ul class="list">
+              <li>Até 5 seções</li>
+              <li>Formulário + validação</li>
+              <li>SEO básico</li>
+            </ul>
+            <a class="btn btn--small" href="#contato">Quero esse</a>
+          </article>
+
+          <article class="card reveal price">
+            <h3>Premium</h3>
+            <p class="muted">Para projetos completos e personalizados.</p>
+            <div class="price__value">R$ <span>---</span></div>
+            <ul class="list">
+              <li>Design avançado</li>
+              <li>Integrações</li>
+              <li>Otimização e performance</li>
+            </ul>
+            <a class="btn btn--small" href="#contato">Quero esse</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--soft" id="faq">
+      <div class="container">
+        <header class="section__header">
+          <h2>FAQ (perguntas que o cliente sempre faz)</h2>
+          <p class="muted"><b>Para que serve:</b> reduzir dúvidas e aumentar chance de fechamento.</p>
+        </header>
+
+        <div class="faq">
+          <details class="faq__item reveal">
+            <summary>Quanto tempo leva para ficar pronto?</summary>
+            <p class="muted">Depende do tamanho. Um site simples pode levar poucos dias. Projetos maiores, mais tempo.</p>
+          </details>
+
+          <details class="faq__item reveal">
+            <summary>Vocês colocam no ar e conectam domínio?</summary>
+            <p class="muted">Sim. Configuramos domínio, DNS, hospedagem (ou GitHub Pages) e SSL/HTTPS quando possível.</p>
+          </details>
+
+          <details class="faq__item reveal">
+            <summary>Consigo editar depois?</summary>
+            <p class="muted">Sim. Podemos deixar textos fáceis de trocar, e também entregar um painel (dependendo do projeto).</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section" id="contato">
+      <div class="container">
+        <header class="section__header">
+          <h2>Contato / Orçamento</h2>
+          <p class="muted">
+            <b>Para que serve:</b> capturar leads. Aqui tem validação e envio para WhatsApp (sem backend).
+          </p>
+        </header>
+
+        <div class="split">
+          <form class="card reveal" id="contactForm">
+            <label class="label">
+              Nome
+              <input class="input" type="text" id="name" placeholder="Seu nome" required>
+            </label>
+
+            <label class="label">
+              WhatsApp
+              <input class="input" type="tel" id="phone" placeholder="(51) 99999-9999" required>
+            </label>
+
+            <label class="label">
+              O que você precisa?
+              <select class="input" id="need" required>
+                <option value="">Selecione</option>
+                <option>Site institucional</option>
+                <option>Página de vendas</option>
+                <option>Portfólio</option>
+                <option>Outros</option>
+              </select>
+            </label>
+
+            <label class="label">
+              Mensagem
+              <textarea class="input textarea" id="message" rows="5" placeholder="Descreva o que você quer..." required></textarea>
+            </label>
+
+            <div class="row">
+              <button class="btn" type="submit">Enviar para WhatsApp</button>
+              <button class="btn btn--ghost" type="button" id="clearForm">Limpar</button>
+            </div>
+
+            <p class="hint" id="formHint">
+              *Exemplo: ao clicar em “Enviar”, abre o WhatsApp com uma mensagem pronta.
+            </p>
+          </form>
+
+          <div class="card reveal">
+            <h3>📌 Botões rápidos</h3>
+            <p class="muted"><b>Para que serve:</b> facilitar conversão com 1 clique.</p>
+
+            <div class="quickActions">
+              <a class="btn" id="whatsBtn" href="#" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+              <a class="btn btn--ghost" href="#precos">Ver planos</a>
+              <button class="btn btn--ghost" id="toastBtn" type="button">Mostrar aviso</button>
+            </div>
+
+            <div class="divider"></div>
+
+            <h4>📈 Métricas (demo)</h4>
+            <p class="muted">
+              <b>Para que serve:</b> mostrar “números” (clientes, projetos, avaliações).
+            </p>
+            <div class="stats stats--mini">
+              <div class="stat">
+                <span class="stat__num" data-count="27">0</span>
+                <span class="stat__label">Pedidos</span>
+              </div>
+              <div class="stat">
+                <span class="stat__num" data-count="14">0</span>
+                <span class="stat__label">Sites entregues</span>
+              </div>
+              <div class="stat">
+                <span class="stat__num" data-count="5">0</span>
+                <span class="stat__label">Estrelas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <div class="container footer__content">
+        <p>© <span id="year"></span> Seu Serviço — Demonstração.</p>
+        <a class="muted" href="#inicio">Voltar ao topo ↑</a>
+      </div>
+    </footer>
+
+    <!-- Botão flutuante do WhatsApp -->
+    <a class="floatWhats" id="floatWhats" href="#" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+      💬
+    </a>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__box" role="dialog" aria-modal="true" aria-label="Modal de demonstração">
+      <div class="modal__header">
+        <h3>Modal (demonstração)</h3>
+        <button class="modal__close" id="closeModal" aria-label="Fechar modal">✕</button>
+      </div>
+      <p class="muted">
+        <b>Para que serve:</b> mostrar promoções, avisos, captura de lead, portfólio em destaque, etc.
+      </p>
+
+      <div class="modal__actions">
+        <a class="btn" href="#contato" id="goBudget">Ir para orçamento</a>
+        <button class="btn btn--ghost" id="closeModal2">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
